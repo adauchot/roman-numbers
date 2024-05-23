@@ -2,8 +2,7 @@ import {RomanNumberConverter} from "./roman-converter";
 
 describe('RomanConverter', () => {
     it('should convert 1 to I', () => {
-        const romanSymbol = RomanNumberConverter.convert(1);
-        expect(romanSymbol).toBe('I');
+        expect(RomanNumberConverter.convert(1)).toBe('I');
     });
 
     it('should convert 2 to II', () => {
@@ -63,7 +62,7 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(33)).toBe('XXXIII');
     });*/
 
-    it('should take 43 and the list a arabic numbers corresponding to roman symbols and return 40', () => {
+    it('should breakdown 43 and return output 40', () => {
         const numberToTest = 43;
         const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
 
