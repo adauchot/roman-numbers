@@ -81,6 +81,10 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(453)).toBe('CDLIII');
     });
 
+    it ('should convert 745 to DCCXLV', () => {
+expect(RomanNumberConverter.convert(745)).toBe('DCCXLV');
+    });
+
     it('should breakdown 43 and return output 40', () => {
         const numberToTest = 43;
         const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
