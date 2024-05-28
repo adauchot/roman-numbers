@@ -69,6 +69,14 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(100)).toBe('C');
     });
 
+    it ('should convert 142 to CXLII', () => {
+        expect(RomanNumberConverter.convert(142)).toBe('CXLII');
+    });
+
+    it ('should convert 354 to CXLII', () => {
+        expect(RomanNumberConverter.convert(142)).toBe('CXLII');
+    });
+
     it('should breakdown 43 and return output 40', () => {
         const numberToTest = 43;
         const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
