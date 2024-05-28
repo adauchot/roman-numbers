@@ -61,6 +61,10 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(33)).toBe('XXXIII');
     });
 
+    it ('should convert 99 to XCIX', () => {
+        expect(RomanNumberConverter.convert(99)).toBe('XCIX');
+    });
+
     it('should breakdown 43 and return output 40', () => {
         const numberToTest = 43;
         const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
