@@ -82,7 +82,11 @@ describe('RomanConverter', () => {
     });
 
     it ('should convert 745 to DCCXLV', () => {
-expect(RomanNumberConverter.convert(745)).toBe('DCCXLV');
+        expect(RomanNumberConverter.convert(745)).toBe('DCCXLV');
+    });
+
+    it ('should convert 999 to CMXCIX', () => {
+        expect(RomanNumberConverter.convert(999)).toBe('CMXCIX');
     });
 
     it('should breakdown 43 and return output 40', () => {
