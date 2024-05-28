@@ -89,6 +89,10 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(999)).toBe('CMXCIX');
     });
 
+    it ('should convert 1598 to MD', () => {
+        expect(RomanNumberConverter.convert(1598)).toBe('MDXCVIII');
+    });
+
     it('should breakdown 43 and return output 40', () => {
         const numberToTest = 43;
         const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
