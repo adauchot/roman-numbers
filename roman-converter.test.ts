@@ -65,6 +65,10 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(99)).toBe('XCIX');
     });
 
+    it ('should convert 100 to C', () => {
+        expect(RomanNumberConverter.convert(100)).toBe('C');
+    });
+
     it('should breakdown 43 and return output 40', () => {
         const numberToTest = 43;
         const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
