@@ -93,6 +93,10 @@ describe('RomanConverter', () => {
         expect(RomanNumberConverter.convert(1598)).toBe('MDXCVIII');
     });
 
+    it ('should convert 3332 to MMMCCCXXXII', () => {
+        expect(RomanNumberConverter.convert(3332)).toBe('MMMCCCXXXII');
+    });
+
     it('should breakdown 43 and return output 40', () => {
         const numberToTest = 43;
         const listOfArabicNumbers = [1, 4, 5, 9, 10, 40, 50];
