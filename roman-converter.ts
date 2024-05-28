@@ -7,6 +7,8 @@ export abstract class RomanNumberConverter {
         [10, 'X'],
         [40, 'XL'],
         [50, 'L'],
+        [90, 'XC'],
+        [100, 'C']
     ]);
 
     static convert(number: number) {
